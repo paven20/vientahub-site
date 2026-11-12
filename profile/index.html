@@ -92,7 +92,7 @@ nav.top :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--navy
 .btn.ghost:hover{border-color:var(--mint);color:var(--mint)}
 .hero :focus-visible,.contact :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--navy)}
 .photo{margin:0;text-align:center}
-.photo img{width:207px;border-radius:20px;border:1px solid var(--k8);box-shadow:0 20px 50px var(--k3)}
+.photo img{width:240px;border-radius:20px;border:1px solid var(--k8);box-shadow:0 20px 50px var(--k3)}
 .photo figcaption{margin-top:12px;font-size:13px;color:var(--dim)}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:48px 0 0;padding:24px 0 0;border-top:1px solid var(--k6)}
 .stats div{min-width:0}
@@ -113,6 +113,10 @@ nav.top :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--navy
 .meta{font-size:14px;color:var(--sub);margin-top:4px}
 .card > p:not(.meta){margin-top:14px;font-size:15px}
 .tags{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:18px}
+.card.wide{grid-column:1/-1;flex-direction:row;gap:20px;background:linear-gradient(135deg,var(--white),var(--ivory))}
+.card.wide .ic{flex:none;margin-bottom:0}
+.wide-body{min-width:0;display:flex;flex-direction:column}
+.wide-body > p:not(.meta){margin-top:14px;font-size:15px;max-width:80ch}
 .tags li{font-size:13px;color:var(--teal-d);background:var(--k10);border:1px solid var(--k12);border-radius:999px;padding:3px 10px}
 
 .skills{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 40px;counter-reset:s}
@@ -154,7 +158,7 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
   .links{display:none}.lang{margin-left:auto}
   .hero{padding:48px 0 40px}
   .hero-grid{grid-template-columns:minmax(0,1fr)}
-  .photo{order:-1;text-align:left}.photo img{width:140px}
+  .photo{order:-1;text-align:left}.photo img{width:160px}.card.wide{flex-direction:column}.card.wide .ic{margin-bottom:16px}
   .cards,.skills,.edu{grid-template-columns:minmax(0,1fr)}
   .sec{padding:56px 0}
 }
@@ -162,7 +166,7 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 @media print{nav.top,.cta,footer{display:none}.hero,.contact{background:none;color:var(--text)}.hero h1,.stats dt,.contact h2{color:var(--navy)}.sec{padding:24px 0}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfilePage", "url": "https://vientahub.com/profile/", "name": "Duy Pham, AI Training and eLearning Consultant | Vienta Hub", "inLanguage": "en", "mainEntity": {"@type": "Person", "@id": "https://vientahub.com/profile/#duy", "name": "Phạm Bình Phương Duy", "alternateName": "Duy Pham", "jobTitle": "Founder, Vienta Hub", "worksFor": {"@id": "https://vientahub.com/#org"}, "email": "mailto:duypham@vientahub.com", "image": "https://vientahub.com/profile/duy-pham.jpg", "address": {"@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Fulbright University Vietnam"}, {"@type": "CollegeOrUniversity", "name": "CFVG"}, {"@type": "CollegeOrUniversity", "name": "Banking University of Ho Chi Minh City"}], "knowsAbout": ["AI Training", "AI Workflow", "AI in eLearning", "eLearning", "Instructional Design", "Training and Development"]}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Vienta Hub", "item": "https://vientahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Profile", "item": "https://vientahub.com/profile/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfilePage", "url": "https://vientahub.com/profile/", "name": "Duy Pham, AI Training and eLearning Consultant | Vienta Hub", "inLanguage": "en", "mainEntity": {"@type": "Person", "@id": "https://vientahub.com/profile/#duy", "name": "Phạm Bình Phương Duy", "alternateName": "Duy Pham", "jobTitle": "Founder, Vienta Hub", "worksFor": {"@id": "https://vientahub.com/#org"}, "email": "mailto:duypham@vientahub.com", "image": "https://vientahub.com/profile/duy-pham.jpg", "address": {"@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Fulbright University Vietnam"}, {"@type": "CollegeOrUniversity", "name": "CFVG"}], "knowsAbout": ["AI Training", "AI Workflow", "AI in eLearning", "eLearning", "Instructional Design", "Training and Development"]}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Vienta Hub", "item": "https://vientahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Profile", "item": "https://vientahub.com/profile/"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main"><span class="en">Skip to content</span><span class="vi">Bỏ qua đến nội dung</span></a>
@@ -188,14 +192,14 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
     <div class="hero-copy">
       <h1>Phạm Bình Phương Duy</h1>
       <p class="role"><span class="en">Founder of Vienta Hub. AI training, AI workflow and AI-powered eLearning consultant.</span><span class="vi">Nhà sáng lập Vienta Hub. Chuyên gia tư vấn đào tạo AI, quy trình AI và eLearning ứng dụng AI.</span></p>
-      <p class="lead"><span class="en">Duy Pham has 14+ years in training and development, eLearning, recruitment and business strategy. He now helps organisations in Vietnam, Australia and North America put AI to work in training and daily operations, so teams grow stronger instead of more dependent on tools.</span><span class="vi">Duy Pham có hơn 14 năm kinh nghiệm trong đào tạo và phát triển, eLearning, tuyển dụng và chiến lược kinh doanh. Hiện anh giúp các tổ chức tại Việt Nam, Úc và Bắc Mỹ ứng dụng AI vào đào tạo và vận hành hằng ngày, để đội ngũ mạnh lên thay vì phụ thuộc vào công cụ.</span></p>
+      <p class="lead"><span class="en">Duy Pham has 14+ years in training and development, eLearning, recruitment and business strategy. He now helps organisations in Vietnam, ASEAN and North America put AI to work in training and daily operations, so teams grow stronger instead of more dependent on tools.</span><span class="vi">Duy Pham có hơn 14 năm kinh nghiệm trong đào tạo và phát triển, eLearning, tuyển dụng và chiến lược kinh doanh. Hiện anh giúp các tổ chức tại Việt Nam, ASEAN và Bắc Mỹ ứng dụng AI vào đào tạo và vận hành hằng ngày, để đội ngũ mạnh lên thay vì phụ thuộc vào công cụ.</span></p>
       <div class="cta">
         <a class="btn" href="mailto:duypham@vientahub.com"><span class="en">Work with Duy</span><span class="vi">Làm việc với Duy</span></a>
         <a class="btn ghost" href="/#services"><span class="en">Vienta Hub services</span><span class="vi">Dịch vụ Vienta Hub</span></a>
       </div>
     </div>
     <figure class="photo">
-      <img src="/profile/duy-pham.jpg" width="207" height="235" alt="Portrait of Pham Binh Phuong Duy (Duy Pham)">
+      <img src="/profile/duy-pham.jpg" width="240" height="273" alt="Portrait of Pham Binh Phuong Duy (Duy Pham)">
       <figcaption><span class="en">Ho Chi Minh City, Vietnam</span><span class="vi">TP. Hồ Chí Minh, Việt Nam</span></figcaption>
     </figure>
   </div>
@@ -214,6 +218,15 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
     <h2><span class="en">Recent projects</span><span class="vi">Dự án gần đây</span></h2>
     <p class="sub"><span class="en">Independent AI and eLearning consulting, 2025 to now.</span><span class="vi">Tư vấn AI và eLearning độc lập, từ 2025 đến nay.</span></p>
     <div class="cards">
+      <article class="card wide">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-1.5A5.5 5.5 0 0 1 10.5 14h3a5.5 5.5 0 0 1 5.5 5.5V21"/><path d="M16.5 3.5l1.2 1.2M19 8h1.5M17.7 11.3l1.1 1.1"/></svg></div>
+        <div class="wide-body">
+        <h3><span class="en">AI coaching for CEOs and Directors</span><span class="vi">Coaching AI cho CEO và Giám đốc</span></h3>
+        <p class="meta"><span class="en">Leaders of corporations and groups in Vietnam</span><span class="vi">Lãnh đạo các tập đoàn và tổng công ty tại Việt Nam</span></p>
+        <p><span class="en">One-on-one and small-group coaching that helps CEOs and directors use AI in their own decisions, strategy and management, then lead AI adoption across their organisations with clear priorities instead of tool hype.</span><span class="vi">Coaching 1 kèm 1 và nhóm nhỏ, giúp CEO và giám đốc ứng dụng AI vào chính việc ra quyết định, chiến lược và quản trị của mình, rồi dẫn dắt tổ chức triển khai AI với ưu tiên rõ ràng thay vì chạy theo công cụ.</span></p>
+        <ul class="tags"><li><span class="en">AI coaching</span><span class="vi">Coaching AI</span></li><li><span class="en">Leadership</span><span class="vi">Lãnh đạo</span></li><li><span class="en">AI strategy</span><span class="vi">Chiến lược AI</span></li></ul>
+        </div>
+      </article>
       <article class="card">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01"/></svg></div>
         <h3>CC1</h3>
@@ -238,7 +251,7 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
       <article class="card">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg></div>
         <h3>Morpheus Trading Group</h3>
-        <p class="meta"><span class="en">Trading, Australia</span><span class="vi">Thương mại, Úc</span></p>
+        <p class="meta"><span class="en">Trading, USA</span><span class="vi">Thương mại, Mỹ</span></p>
         <p><span class="en">Led market research, industry analysis and partnership development for expansion into Vietnam and ASEAN, working with leadership on go-to-market strategy, client acquisition and the local regulatory landscape.</span><span class="vi">Dẫn dắt nghiên cứu thị trường, phân tích ngành và phát triển đối tác cho kế hoạch mở rộng sang Việt Nam và ASEAN, cùng ban lãnh đạo xây dựng chiến lược thâm nhập thị trường, tìm khách hàng và nắm khung pháp lý địa phương.</span></p>
         <ul class="tags"><li><span class="en">Strategy</span><span class="vi">Chiến lược</span></li><li><span class="en">Market entry</span><span class="vi">Thâm nhập thị trường</span></li></ul>
       </article>
@@ -280,7 +293,7 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
       <li>
         <p class="when"><span class="en">2025 to now</span><span class="vi">2025 đến nay</span></p>
         <h3><span class="en">Founder, Vienta Hub; independent AI and eLearning consultant</span><span class="vi">Nhà sáng lập Vienta Hub; chuyên gia tư vấn AI và eLearning độc lập</span></h3>
-        <p><span class="en">Supports organisations in construction, banking, trading and healthcare across Vietnam, ASEAN, Australia and North America. Combines instructional design with hands-on AI implementation so training turns into measurable operational impact rather than theory.</span><span class="vi">Đồng hành cùng các tổ chức trong ngành xây dựng, ngân hàng, thương mại và y tế tại Việt Nam, ASEAN, Úc và Bắc Mỹ. Kết hợp thiết kế giảng dạy với triển khai AI thực tế để đào tạo tạo ra tác động đo được trong vận hành, không dừng ở lý thuyết.</span></p>
+        <p><span class="en">Supports organisations in construction, banking, trading and healthcare across Vietnam, ASEAN and North America. Combines instructional design with hands-on AI implementation so training turns into measurable operational impact rather than theory.</span><span class="vi">Đồng hành cùng các tổ chức trong ngành xây dựng, ngân hàng, thương mại và y tế tại Việt Nam, ASEAN và Bắc Mỹ. Kết hợp thiết kế giảng dạy với triển khai AI thực tế để đào tạo tạo ra tác động đo được trong vận hành, không dừng ở lý thuyết.</span></p>
       </li>
       <li>
         <p class="when">2011 <span class="en">to</span><span class="vi">đến</span> 2024</p>
@@ -299,9 +312,9 @@ footer :focus-visible{outline-color:var(--mint);box-shadow:0 0 0 5px var(--k0)}
   <div class="wrap">
     <h2><span class="en">Education and standing</span><span class="vi">Học vấn và hoạt động chuyên môn</span></h2>
     <div class="edu">
-      <article><p class="when">2024 <span class="en">to</span><span class="vi">đến</span> 2026</p><h3><span class="en">Master in Public Policy, Leadership and Management</span><span class="vi">Thạc sĩ Chính sách Công, Lãnh đạo và Quản lý</span></h3><p><span class="en">Fulbright School of Public Policy and Management, with Harvard Kennedy School. Current GPA 9.0/10. Research on AI and governance.</span><span class="vi">Trường Chính sách Công và Quản lý Fulbright, cùng Harvard Kennedy School. Điểm hiện tại 9,0/10. Nghiên cứu về AI và quản trị.</span></p></article>
+      <article><p class="when">2024 <span class="en">to</span><span class="vi">đến</span> 2026</p><h3><span class="en">Master in Public Policy, Leadership and Management</span><span class="vi">Thạc sĩ Chính sách Công, Lãnh đạo và Quản lý</span></h3><p><span class="en">Fulbright School of Public Policy and Management, Fulbright University Vietnam. Current GPA 9.0/10. Research on AI and governance.</span><span class="vi">Trường Chính sách Công và Quản lý Fulbright, Đại học Fulbright Việt Nam. Điểm hiện tại 9,0/10. Nghiên cứu về AI và quản trị.</span></p></article>
       <article><p class="when">2014 <span class="en">to</span><span class="vi">đến</span> 2016</p><h3><span class="en">MBA, HR specialization</span><span class="vi">Thạc sĩ Quản trị Kinh doanh (MBA), chuyên ngành Nhân sự</span></h3><p><span class="en">CFVG. Best thesis of MBA Intake 23.</span><span class="vi">CFVG. Luận văn xuất sắc nhất khóa MBA 23.</span></p></article>
-      <article><p class="when">2009 <span class="en">to</span><span class="vi">đến</span> 2013</p><h3><span class="en">Bachelor, Business English</span><span class="vi">Cử nhân Tiếng Anh Thương mại</span></h3><p><span class="en">Banking University of Ho Chi Minh City.</span><span class="vi">Trường Đại học Ngân hàng TP. Hồ Chí Minh.</span></p></article>
+      
       <article><p class="when"><span class="en">Speaking</span><span class="vi">Diễn giả</span></p><h3><span class="en">Panelist, AAPBS Academic Summit 2026</span><span class="vi">Diễn giả tại AAPBS Academic Summit 2026</span></h3><p><span class="en">Visiting lecturer at HCMC University of Technology, University of Science, International University and University of Economics HCMC.</span><span class="vi">Giảng viên thỉnh giảng tại Đại học Bách khoa, Đại học Khoa học Tự nhiên, Đại học Quốc tế và Đại học Kinh tế TP. HCM.</span></p></article>
     </div>
   </div>
