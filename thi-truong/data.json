@@ -1,0 +1,85 @@
+{
+  "updated": "2026-11-19",
+  "note": "Khung tham khảo theo vòng tròn kinh tế, cập nhật thủ công. Không phải tư vấn đầu tư cá nhân.",
+  "cycle": [
+    {
+      "id": "vn", "name": "Việt Nam", "phase": "Mở rộng",
+      "tilt": "Mở rộng muộn, lạm phát đang tăng tốc",
+      "axes": {
+        "growth": {"dir": "up", "evidence": "GDP quý 3/2026 tăng 9,95%, nhanh nhất từ 2022; PMI tháng 10 đạt 52,3 (tháng 9: 51,9)"},
+        "inflation": {"dir": "up", "evidence": "CPI tháng 10 tăng 5,09% so với cùng kỳ, lạm phát cơ bản 4,04%; bình quân 10 tháng 4,57%"},
+        "policy": {"dir": "flat", "evidence": "NHNN yêu cầu ngân hàng giảm lãi vay nhưng áp lực huy động và trần lãi tiền gửi nghiêng tăng; mục tiêu tín dụng 15%"}
+      },
+      "sectors": "Công nghiệp, vật liệu, xây dựng, đầu tư công, ngân hàng",
+      "counter": "Đơn hàng xuất khẩu mới giảm trong tháng 10 (theo S&P Global), dấu hiệu cầu bên ngoài chậm lại",
+      "trigger": "CPI vượt 5,5% hai tháng liền hoặc NHNN tăng lãi điều hành: chuyển sang Đỉnh"
+    },
+    {
+      "id": "us", "name": "Mỹ", "phase": "Đỉnh",
+      "tilt": "Đỉnh, tăng trưởng còn mạnh nhưng lạm phát quay lại",
+      "axes": {
+        "growth": {"dir": "up", "evidence": "ISM sản xuất tháng 10 đạt 55,5; việc làm phi nông nghiệp +165.000, thất nghiệp 4,1%"},
+        "inflation": {"dir": "up", "evidence": "CPI tháng 10 +0,4% so với tháng trước, khoảng 4,2% so với cùng kỳ; CPI lõi 3 tháng quy năm 3,7%"},
+        "policy": {"dir": "up", "evidence": "Fed giữ 3,75 đến 4,00% (28/10) với 2 phiếu muốn tăng; thị trường định giá khả năng tăng lãi tháng 12; lợi suất 10 năm quanh 5,1%"}
+      },
+      "sectors": "Năng lượng, hàng hoá, tiêu dùng thiết yếu; công nghệ AI vẫn dẫn dắt nhưng định giá cao",
+      "counter": "Tăng trưởng việc làm và ISM vẫn mạnh, chưa có dấu hiệu suy thoái trong ngắn hạn",
+      "trigger": "Việc làm âm 2 tháng liền hoặc ISM dưới 50: chuyển sang Suy thoái"
+    },
+    {
+      "id": "cn", "name": "Trung Quốc", "phase": "Đáy",
+      "tilt": "Đáy kéo dài, giảm phát nhẹ, sản xuất yếu",
+      "axes": {
+        "growth": {"dir": "flat", "evidence": "GDP quý 3/2026 tăng 4,5% (quý 2: 4,3%) nhưng PMI chính thức tháng 10 giảm còn 49,3 (tháng 9: 50,1)"},
+        "inflation": {"dir": "down", "evidence": "CPI tháng 10 chỉ tăng 0,7% so với cùng kỳ (tháng 9: 0,9%)"},
+        "policy": {"dir": "flat", "evidence": "Chưa thấy đợt nới lớn mới trong số liệu đã thu; cần theo dõi LPR và dự trữ bắt buộc"}
+      },
+      "sectors": "Xuất khẩu công nghệ, hạ tầng; bất động sản vẫn yếu",
+      "counter": "Xuất khẩu tháng 9 tăng mạnh và GDP quý 3 nhỉnh hơn quý 2",
+      "trigger": "PMI trên 51 hai tháng liền và CPI trên 1,5%: chuyển sang Phục hồi"
+    },
+    {
+      "id": "world", "name": "Toàn cầu", "phase": "Mở rộng",
+      "tilt": "Mở rộng muộn, lạm phát còn cao",
+      "axes": {
+        "growth": {"dir": "flat", "evidence": "IMF (10/2026) dự báo tăng trưởng toàn cầu 3,1% năm 2026 và 3,4% năm 2027"},
+        "inflation": {"dir": "flat", "evidence": "IMF dự báo lạm phát toàn cầu 4,7% năm 2026, giảm còn 4,1% năm 2027"},
+        "policy": {"dir": "up", "evidence": "Lợi suất dài của Mỹ quanh 5% kéo mặt bằng lãi suất toàn cầu đi lên"}
+      },
+      "sectors": "AI và bán dẫn, năng lượng, hàng hoá",
+      "counter": "IMF cảnh báo rủi ro từ bong bóng AI và nợ công cao",
+      "trigger": "Mỹ vào Suy thoái hoặc IMF hạ dự báo dưới 2,8%: chuyển sang Đỉnh hoặc Suy thoái"
+    }
+  ],
+  "allocation": {
+    "classes": ["Tiền gửi, tiền mặt", "Trái phiếu, quỹ trái phiếu", "Cổ phiếu Việt Nam", "Cổ phiếu quốc tế (qua quỹ)", "Vàng", "Crypto"],
+    "profiles": [
+      {"name": "Thận trọng", "neutral": [35, 30, 20, 5, 10, 0], "current": [38, 27, 20, 3, 12, 0]},
+      {"name": "Cân bằng", "neutral": [15, 20, 40, 10, 10, 5], "current": [18, 17, 40, 8, 12, 5]},
+      {"name": "Tăng trưởng", "neutral": [5, 10, 55, 12, 8, 10], "current": [8, 7, 55, 10, 10, 10]}
+    ],
+    "reasons": [
+      "Tiền gửi +3: Mỹ ở pha Đỉnh, lạm phát hai nền kinh tế đều tăng tốc, giữ thêm phần chờ giải ngân.",
+      "Trái phiếu −3: lợi suất dài của Mỹ quanh 5,1% và Fed có thể tăng lãi, ưu tiên kỳ hạn ngắn.",
+      "Cổ phiếu quốc tế −2: thị trường Mỹ ở pha Đỉnh với định giá cao.",
+      "Vàng +2: phòng thủ trước lạm phát tăng và rủi ro thắt chặt.",
+      "Cổ phiếu Việt Nam giữ nguyên: kinh tế trong nước vẫn Mở rộng; chưa áp trạng thái kỹ thuật của VN-Index."
+    ],
+    "rules": "Quỹ dự phòng 6 tháng trước; tiền mới chia 3 đến 6 đợt; cân bằng lại mỗi quý hoặc khi lệch quá 5 điểm; không margin; một mã tối đa 10% tài sản."
+  },
+  "sources": [
+    {"label": "VietnamPlus: GDP quý 3/2026 tăng 9,95%", "url": "https://en.vietnamplus.vn/vietnam-posts-gdp-growth-of-995-in-q3-post353039.vnp"},
+    {"label": "VIR: PMI Việt Nam tháng 10/2026", "url": "https://vir.com.vn/vietnam-manufacturing-growth-eases-in-october-as-export-orders-fall-164214.html"},
+    {"label": "VietnamPlus: CPI 10 tháng 2026", "url": "https://en.vietnamplus.vn/cpi-up-457-in-first-10-months-of-2026-post354744.vnp"},
+    {"label": "Vietnamnet: NHNN yêu cầu giảm lãi vay", "url": "https://vietnamnet.vn/en/vn-orders-banks-to-cut-interest-rates-while-safeguarding-financial-stability-2566664.html"},
+    {"label": "KPMG: CPI Mỹ tháng 10/2026", "url": "https://kpmg.com/us/en/articles/2026/october-2026-cpi.html"},
+    {"label": "StockAnalysis: Fed giữ lãi 28/10/2026", "url": "https://stockanalysis.com/news/fed-holds-rates-steady-oct-2026/"},
+    {"label": "IndustryWeek: việc làm Mỹ tháng 10/2026", "url": "https://www.industryweek.com/talent/news/55417255/october-jobs-report-us-adds-165000-jobs-as-unemployment-falls-slightly-to-41"},
+    {"label": "Manufacturing.net: ISM tháng 10/2026", "url": "https://www.manufacturing.net/supply-chain/news/22978162/october-manufacturing-pmi-at-555"},
+    {"label": "Trading Economics: lợi suất 10 năm Mỹ", "url": "https://tradingeconomics.com/united-states/government-bond-yield"},
+    {"label": "Gov.cn: GDP Trung Quốc quý 3/2026", "url": "https://english.www.gov.cn/archive/statistics/202610/19/content_WS6ad5a59bc6d00ca5f9a0dc86.html"},
+    {"label": "NBS: PMI Trung Quốc tháng 10/2026", "url": "https://www.stats.gov.cn/english/PressRelease/./202611/t20261103_1965735.html"},
+    {"label": "InvestingLive: CPI Trung Quốc tháng 10/2026", "url": "https://investinglive.com/news/china-october-2026-cpi-0-7-y-y-expected-0-8-prior-0-9/"},
+    {"label": "CGTN: IMF WEO tháng 10/2026", "url": "https://news.cgtn.com/news/2026-10-13/IMF-raises-2026-global-growth-forecast-to-3-1--1RcEPm28WWI/p.html"}
+  ]
+}
